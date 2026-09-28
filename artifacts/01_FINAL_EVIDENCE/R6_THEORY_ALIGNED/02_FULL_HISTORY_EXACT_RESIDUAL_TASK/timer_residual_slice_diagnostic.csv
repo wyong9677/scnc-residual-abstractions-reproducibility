@@ -1,0 +1,13 @@
+scenario,slice,pairs,zero_residual_pairs,ratio_min,ratio_max
+independent_dtau_0p1,same_others,324,0,1.25,10.0
+independent_dtau_0p1,empty_queues_same_r,2916,0,1.25,10.0
+shared_dtau_0p1,same_others,676,21,0.0,10.0
+shared_dtau_0p1,empty_queues_same_r,5832,0,1.25,10.0
+independent_dtau_0p05,same_others,2312,0,1.25,10.0
+independent_dtau_0p05,empty_queues_same_r,39304,0,1.25,20.0
+shared_dtau_0p05,same_others,4729,78,0.0,10.0
+shared_dtau_0p05,empty_queues_same_r,78608,0,1.25,20.0
+independent_dtau_0p025,same_others,17424,0,1.25,10.0
+independent_dtau_0p025,empty_queues_same_r,574992,0,1.25,40.0
+shared_dtau_0p025,same_others,35254,300,0.0,10.0
+shared_dtau_0p025,empty_queues_same_r,1149984,0,1.25,40.0

@@ -1,0 +1,9 @@
+{
+  "R8_STATUS": "SEMANTIC_HANDOFF_READY",
+  "r7_run": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS/97_STAGE6_APPLICATION_CALIBRATION_R7/R7_20260924T122551",
+  "generic_candidates": 12,
+  "candidate_sources_copied": 12,
+  "reference_hits": 894,
+  "reference_files_copied": 17,
+  "promotion_policy": "No generic candidate is promoted in R8. Promotion/rejection requires semantic review of factor meaning, one-factor-at-a-time design, complexity definition, and error definition."
+}

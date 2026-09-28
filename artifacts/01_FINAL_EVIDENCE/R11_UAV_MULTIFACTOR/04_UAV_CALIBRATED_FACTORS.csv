@@ -1,0 +1,4 @@
+factor_id,a_i,d_i,C_i,complexity_fit_R2,epsilon_min,epsilon_max,error_semantics
+UAV_SERVICE_TIMER,0.9375000000000133,0.9999999999999997,57.60000000000016,1.0,0.0125,0.2,"max(certified service position bound/p_max, certified service velocity bound/v_max)"
+UAV_POSITION_GRID,0.25000000000000006,1.9683178004367246,18.27625176835979,0.9999628922122721,0.0125,0.2,"max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"
+UAV_VELOCITY_GRID,0.6250000000000001,1.9235018959479995,3.5330494147764475,0.9997842532248722,0.0125,0.2,"max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"

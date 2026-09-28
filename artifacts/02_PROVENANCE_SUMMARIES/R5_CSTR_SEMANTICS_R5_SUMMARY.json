@@ -1,0 +1,13 @@
+{
+  "status": "READY",
+  "missing_targets": [],
+  "source_file_count": 6,
+  "stage5_table_candidates": 14,
+  "copied_stage5_tables": 14,
+  "full_history_sanity_status": "PASS",
+  "claim_boundary": [
+    "CSTR source recovery is separate from Stage-7 full-history service semantics.",
+    "No CSTR d_sigma is inferred from Tcrit or delay-coordinate covering data.",
+    "Full-history sanity audit is diagnostic and does not certify the CSTR timer chart."
+  ]
+}

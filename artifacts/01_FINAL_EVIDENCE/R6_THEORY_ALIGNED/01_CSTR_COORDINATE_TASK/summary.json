@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "source": "08_NUMERICAL_PUBLICATION_CLOSURE_FINAL/01_TABLES/stage5/cstr_stage5_refined_safety_boundary.csv",
+  "source_sha256": "cb3bb732ccaf8f3c493588911b208d9f489a03021cdeb65919dfcfc35e9aad80",
+  "metric_name": "d_tau(tau,tau') = |tau-tau'|",
+  "semantic_role": "service hold-delay coordinate; not behavioral residual pseudometric d_sigma",
+  "nominal_c_tauV_K_per_s": 0.0038909912109375,
+  "nominal_C_tauV_K_per_s": 0.004245758056640625,
+  "guaranteed_c_tauV_K_per_s": 0.003887176513671875,
+  "guaranteed_C_tauV_K_per_s": 0.00424957275390625,
+  "finite_scale_coordinate_cover_exponent": 0.9567795188208672,
+  "finite_scale_coordinate_cover_R2": 0.9965390251806213,
+  "finite_scale_task_cover_exponent": 0.9549840650403026,
+  "finite_scale_task_cover_R2": 0.996717830065728,
+  "finite_scale_exponent_gap": 0.0017954537805645598,
+  "claim_boundary": [
+    "The CSTR delay is the duration for which u_hold is applied before u_fresh.",
+    "No behavioral d_sigma is constructed from this coordinate.",
+    "The covering exponents are finite-scale coordinate/task diagnostics, not asymptotic residual dimensions."
+  ]
+}

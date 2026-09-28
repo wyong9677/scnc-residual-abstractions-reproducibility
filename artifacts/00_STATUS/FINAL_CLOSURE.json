@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "project_root": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS",
+  "freeze_created_local_time": "20260924T131313",
+  "canonical_evidence_stages": {
+    "R6_THEORY_ALIGNED": {
+      "source_path": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS/96_STAGE6_THEORY_ALIGNED_R6/R6_20260924T122030",
+      "expected_status": "THEORY_ALIGNED_EVIDENCE_PASS"
+    },
+    "R9_APPLICATION_SEMANTICS": {
+      "source_path": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS/99_STAGE6_APPLICATION_SEMANTIC_CLOSURE_R9/R9_20260924T123625",
+      "expected_status": "APPLICATION_SEMANTIC_CLOSURE_PASS"
+    },
+    "R11_UAV_MULTIFACTOR": {
+      "source_path": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS/101_STAGE6_UAV_MULTIFACTOR_R11/R11_20260924T124449",
+      "expected_status": "UAV_MULTIFACTOR_APPLICATION_CALIBRATION_PASS"
+    },
+    "R12_1_EXACT_TASK_GRAPH": {
+      "source_path": "<LOCAL_HOME>/Desktop/paper set/Safety-Critical Networked Control/01_ENGINEERING_NUMERICAL_EXPERIMENTS/103_STAGE7_EXACT_VALUE_CERT_R12_1/R12_1_20260924T130826",
+      "expected_status": "EXACT_TASK_VALUE_AND_CONFLICT_CERTIFICATION_PASS"
+    }
+  },
+  "numerical_tasks_closed": {
+    "timer_residual_interface": true,
+    "application_level_a_d_C_calibration": true,
+    "declared_finite_task_eta_V_certification": true,
+    "certified_conflict_graph_and_minimum_code": true
+  },
+  "cleanup_policy": {
+    "delete_known_failed_R12_tree": true,
+    "delete_generated_pycache_and_temp_files": true,
+    "delete_SCNC_delivery_artifacts_in_Downloads_after_freeze": true,
+    "retain_successful_intermediate_project_evidence": true,
+    "do_not_delete_ambiguous_intermediate_runs": true
+  }
+}

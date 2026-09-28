@@ -1,0 +1,123 @@
+{
+  "R6_residual_to_task": {
+    "scenario_count": 6,
+    "C_values": [
+      0.1875
+    ],
+    "global_reverse_constants": [
+      0.0
+    ],
+    "all_upper_pass": true,
+    "fine_independent_task_quotient": 25,
+    "fine_shared_task_quotient": 89
+  },
+  "R11_uav_multifactor": {
+    "status": "UAV_MULTIFACTOR_APPLICATION_CALIBRATION_PASS",
+    "factors": {
+      "timer": {
+        "id": "UAV_SERVICE_TIMER",
+        "a": 0.9375000000000133,
+        "d": 0.9999999999999997,
+        "C": 57.60000000000016,
+        "R2": 1.0,
+        "error_semantics": "max(certified service position bound/p_max, certified service velocity bound/v_max)"
+      },
+      "position_grid": {
+        "id": "UAV_POSITION_GRID",
+        "a": 0.25000000000000006,
+        "d": 1.9683178004367246,
+        "C": 18.27625176835979,
+        "R2": 0.9999628922122721,
+        "error_semantics": "max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"
+      },
+      "velocity_grid": {
+        "id": "UAV_VELOCITY_GRID",
+        "a": 0.6250000000000001,
+        "d": 1.9235018959479995,
+        "C": 3.5330494147764475,
+        "R2": 0.9997842532248722,
+        "error_semantics": "max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"
+      }
+    },
+    "allocation": {
+      "status": "PASS",
+      "Delta": 0.08440117217519658,
+      "D_total": 4.891819696384724,
+      "analytic_eps_star": [
+        0.018403768449072183,
+        0.135841743875344,
+        0.05309952525656824
+      ],
+      "equal_weighted_budget_eps": [
+        0.03000930566229169,
+        0.1125348962335954,
+        0.045013958493438165
+      ],
+      "modeled_cost_reduction_vs_equal": 0.18068975339112148,
+      "KKT_max_minus_min": 0.0,
+      "discrete_calibrated_level_optimum": {
+        "eps": [
+          0.025,
+          0.1,
+          0.05
+        ],
+        "error": 0.07968750000000036,
+        "actual_product_complexity": 4217723136.0
+      }
+    }
+  },
+  "R12_1_exact_task_graph": {
+    "status": "EXACT_TASK_VALUE_AND_CONFLICT_CERTIFICATION_PASS",
+    "declared_finite_task_eta_V": 0,
+    "max_float32_export_error": 8.344650268554688e-09,
+    "headline": {
+      "independent_dtau_0p025": {
+        "scenario": "independent_dtau_0p025",
+        "E": "0.001",
+        "task_quotient_states": 25,
+        "exact_conflict_edges": 300,
+        "legacy_float_edge_mismatches": 0,
+        "minimum_exact_distance_to_2E_numerator": 359,
+        "minimum_exact_distance_to_2E_denominator": 8000,
+        "minimum_exact_distance_to_2E_decimal": 0.044875,
+        "bitset_adapter_pass": 1,
+        "chromatic_lower": 25,
+        "chromatic_upper": 25,
+        "chromatic_exact": 1,
+        "chromatic_status": "BOUNDS_MEET"
+      },
+      "shared_dtau_0p025": {
+        "scenario": "shared_dtau_0p025",
+        "E": "0.001",
+        "task_quotient_states": 89,
+        "exact_conflict_edges": 3852,
+        "legacy_float_edge_mismatches": 0,
+        "minimum_exact_distance_to_2E_numerator": 7,
+        "minimum_exact_distance_to_2E_denominator": 64000,
+        "minimum_exact_distance_to_2E_decimal": 0.000109375,
+        "bitset_adapter_pass": 1,
+        "chromatic_lower": 59,
+        "chromatic_upper": 59,
+        "chromatic_exact": 1,
+        "chromatic_status": "BOUNDS_MEET"
+      }
+    },
+    "gates": {
+      "EXACT_RATIONAL_TASK_VALUE_REPLAY": true,
+      "DECLARED_FINITE_TASK_ETA_V_ZERO": true,
+      "FLOAT32_EXPORT_ERROR_CERTIFIED": true,
+      "GRAPH_BITSET_ADAPTER_ROUNDTRIP": true,
+      "EXACT_CONFLICT_GRAPHS_REBUILT": true,
+      "FINE_E_1E3_EXACT_CHROMATIC_CERTIFICATES": true
+    }
+  },
+  "R9_semantics": {
+    "status": "APPLICATION_SEMANTIC_CLOSURE_PASS",
+    "promoted_application_factors": 2,
+    "factors": [
+      "CSTR_TIMER_CELL",
+      "UAV_SERVICE_TIMER"
+    ],
+    "allocation_gate_at_R9": "NOT_YET_APPLICATION_CALIBRATED"
+  }
+}

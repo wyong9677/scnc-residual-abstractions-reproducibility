@@ -1,0 +1,29 @@
+{
+  "R7_STATUS": "PARTIAL_APPLICATION_CALIBRATION_PASS",
+  "promoted_triplets": 1,
+  "generic_full_triplet_candidates": 12,
+  "candidate_sweeps": 78,
+  "CSTR_timer_triplet": {
+    "factor_id": "CSTR_TIMER_CELL",
+    "application": "CSTR",
+    "epsilon_definition": "timer_cell_width_s",
+    "complexity_definition": "timer_cells",
+    "error_definition": "empirical_tube_maxT_radius_K",
+    "source": "08_NUMERICAL_PUBLICATION_CLOSURE_FINAL/01_TABLES/stage4/cstr_stage4_timer_quantization.csv",
+    "source_sha256": "a36e519e680c2c6ff0821ccb7ee64927838c8db927bc966ac30175dab5b0e5db",
+    "levels": 5,
+    "a_i": 0.004682556854110468,
+    "d_i": 1.000000000000001,
+    "C_i": 240.0000000000004,
+    "complexity_fit_R2": 1.0,
+    "local_d_min": 1.0,
+    "local_d_max": 1.0,
+    "observed_error_ratio_min": 0.0026258620821702533,
+    "error_bound_all_levels_pass": 1,
+    "secondary_endpoint_a": 0.003944111803180022,
+    "calibration_status": "PASS",
+    "claim_boundary": "a_i is a conservative observed finite-grid bound from tube-temperature radius; not yet a certified continuum task-value error constant."
+  },
+  "promotion_rule": "Only semantically verified one-factor-at-a-time application sweeps are promoted; generic column matches remain candidates.",
+  "next_gate": "Review generic candidates. If no additional semantically valid factor sweep exists, generate targeted one-factor-at-a-time experiments before evaluating the allocation theorem with application-calibrated constants."
+}

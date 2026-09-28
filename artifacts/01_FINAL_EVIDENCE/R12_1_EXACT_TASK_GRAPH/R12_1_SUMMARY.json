@@ -1,0 +1,54 @@
+{
+  "R12_1_STATUS": "EXACT_TASK_VALUE_AND_CONFLICT_CERTIFICATION_PASS",
+  "patch_reason": "R12 passed ndarray adjacency directly to frozen graph_bounds.py, whose API expects list[int] bitset adjacency. R12.1 inserts a validated ndarray-to-bitset adapter; graph semantics are unchanged.",
+  "service_history_model": "11_STAGE7_FULL_HISTORY_MIN_COMPLEXITY/R4_SERVICE_HISTORY_BENCHMARK/code/service_history_model.py",
+  "service_history_model_sha256": "a1fd2d512fe1d2b562b74320521d5dbe6dc982f4dc781f05b39cfd83a9934051",
+  "graph_bounds": "11_STAGE7_FULL_HISTORY_MIN_COMPLEXITY/R4_SERVICE_HISTORY_BENCHMARK/code/graph_bounds.py",
+  "graph_bounds_sha256": "23fc9247543c4beeef6afede778327e54b1fdb0b8756f684fd4305da28c29257",
+  "gates": {
+    "EXACT_RATIONAL_TASK_VALUE_REPLAY": true,
+    "DECLARED_FINITE_TASK_ETA_V_ZERO": true,
+    "FLOAT32_EXPORT_ERROR_CERTIFIED": true,
+    "GRAPH_BITSET_ADAPTER_ROUNDTRIP": true,
+    "EXACT_CONFLICT_GRAPHS_REBUILT": true,
+    "FINE_E_1E3_EXACT_CHROMATIC_CERTIFICATES": true
+  },
+  "eta_V_interpretation": {
+    "declared_finite_task": 0,
+    "reason": "For the declared Stage-7 finite task, two-sample kinematics, finite action maximization, safety margins, service durations, and plant anchors are recomputed with exact rational arithmetic.",
+    "scope_boundary": "Exact only for the declared finite 81-anchor, finite-action, two-sample task; not an uncountable continuous-domain certificate."
+  },
+  "headline_E": "0.001",
+  "headline_fine_scenarios": {
+    "independent_dtau_0p025": {
+      "scenario": "independent_dtau_0p025",
+      "E": "0.001",
+      "task_quotient_states": 25,
+      "exact_conflict_edges": 300,
+      "legacy_float_edge_mismatches": 0,
+      "minimum_exact_distance_to_2E_numerator": 359,
+      "minimum_exact_distance_to_2E_denominator": 8000,
+      "minimum_exact_distance_to_2E_decimal": 0.044875,
+      "bitset_adapter_pass": 1,
+      "chromatic_lower": 25,
+      "chromatic_upper": 25,
+      "chromatic_exact": 1,
+      "chromatic_status": "BOUNDS_MEET"
+    },
+    "shared_dtau_0p025": {
+      "scenario": "shared_dtau_0p025",
+      "E": "0.001",
+      "task_quotient_states": 89,
+      "exact_conflict_edges": 3852,
+      "legacy_float_edge_mismatches": 0,
+      "minimum_exact_distance_to_2E_numerator": 7,
+      "minimum_exact_distance_to_2E_denominator": 64000,
+      "minimum_exact_distance_to_2E_decimal": 0.000109375,
+      "bitset_adapter_pass": 1,
+      "chromatic_lower": 59,
+      "chromatic_upper": 59,
+      "chromatic_exact": 1,
+      "chromatic_status": "BOUNDS_MEET"
+    }
+  }
+}

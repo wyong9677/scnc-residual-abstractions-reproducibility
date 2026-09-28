@@ -1,0 +1,197 @@
+{
+  "R11_STATUS": "UAV_MULTIFACTOR_APPLICATION_CALIBRATION_PASS",
+  "stage2_source": "01_CODE/stage2/uav_stage2.py",
+  "fixed_conditions": {
+    "timer_width_s_for_grid_sweeps": 0.025,
+    "v_step_mps_during_p_sweep": 0.1,
+    "p_step_m_during_v_sweep": 0.1,
+    "other_service_and_nonservice_uncertainties": "frozen Stage-2 baseline"
+  },
+  "service_law": {
+    "position_slope_m_per_s": 0.07500000000000012,
+    "velocity_slope_mps_per_s": 0.7500000000000011,
+    "max_abs_position_fit_residual_m": 2.3635607360183997e-17,
+    "max_abs_velocity_fit_residual_mps": 2.3592239273284576e-16,
+    "verified_linear_through_origin": true
+  },
+  "factors": {
+    "timer": {
+      "id": "UAV_SERVICE_TIMER",
+      "a": 0.9375000000000133,
+      "d": 0.9999999999999997,
+      "C": 57.60000000000016,
+      "R2": 1.0,
+      "eps_min": 0.0125,
+      "eps_max": 0.2,
+      "levels": [
+        0.0125,
+        0.025,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "complexities": [
+        4608.0,
+        2304.0,
+        1152.0,
+        576.0,
+        288.0
+      ],
+      "rows": [
+        {
+          "factor": "timer",
+          "epsilon": 0.0125,
+          "complexity": 4608.0,
+          "normalized_error": 0.011718750000000167,
+          "error_over_epsilon": 0.9375000000000133
+        },
+        {
+          "factor": "timer",
+          "epsilon": 0.025,
+          "complexity": 2304.0,
+          "normalized_error": 0.023437500000000333,
+          "error_over_epsilon": 0.9375000000000133
+        },
+        {
+          "factor": "timer",
+          "epsilon": 0.05,
+          "complexity": 1152.0,
+          "normalized_error": 0.04687500000000025,
+          "error_over_epsilon": 0.937500000000005
+        },
+        {
+          "factor": "timer",
+          "epsilon": 0.1,
+          "complexity": 576.0,
+          "normalized_error": 0.09375000000000029,
+          "error_over_epsilon": 0.9375000000000029
+        },
+        {
+          "factor": "timer",
+          "epsilon": 0.2,
+          "complexity": 288.0,
+          "normalized_error": 0.18750000000000017,
+          "error_over_epsilon": 0.9375000000000008
+        }
+      ],
+      "error_semantics": "max(certified service position bound/p_max, certified service velocity bound/v_max)"
+    },
+    "position_grid": {
+      "id": "UAV_POSITION_GRID",
+      "a": 0.25000000000000006,
+      "d": 1.9683178004367246,
+      "C": 18.27625176835979,
+      "R2": 0.9999628922122721,
+      "eps_min": 0.0125,
+      "eps_max": 0.2,
+      "levels": [
+        0.2,
+        0.1,
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "complexities": [
+        441.0,
+        1681.0,
+        6561.0,
+        25921.0,
+        103041.0
+      ],
+      "radius_position_slope": 0.5000000000000001,
+      "radius_velocity_slope": 6.012194753977989e-17,
+      "radius_position_affine_R2": 1.0,
+      "radius_velocity_affine_R2": 1.0,
+      "radius_position_max_fit_residual": 1.3877787807814457e-17,
+      "radius_velocity_max_fit_residual": 2.7755575615628914e-17,
+      "error_semantics": "max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"
+    },
+    "velocity_grid": {
+      "id": "UAV_VELOCITY_GRID",
+      "a": 0.6250000000000001,
+      "d": 1.9235018959479995,
+      "C": 3.5330494147764475,
+      "R2": 0.9997842532248722,
+      "eps_min": 0.0125,
+      "eps_max": 0.2,
+      "levels": [
+        0.2,
+        0.1,
+        0.05,
+        0.025,
+        0.0125
+      ],
+      "complexities": [
+        81.0,
+        289.0,
+        1089.0,
+        4225.0,
+        16641.0
+      ],
+      "radius_position_slope": 0.05,
+      "radius_velocity_slope": 0.5000000000000001,
+      "radius_position_affine_R2": 1.0,
+      "radius_velocity_affine_R2": 1.0,
+      "radius_position_max_fit_residual": 1.3877787807814457e-17,
+      "radius_velocity_max_fit_residual": 2.7755575615628914e-17,
+      "error_semantics": "max(grid-induced successor-radius contribution/p_max, grid-induced successor-radius contribution/v_max)"
+    }
+  },
+  "allocation": {
+    "status": "PASS",
+    "Delta": 0.08440117217519658,
+    "D_total": 4.891819696384724,
+    "calibrated_Delta_interval": [
+      0.05732601206700932,
+      0.12426397036340735
+    ],
+    "factor_order": [
+      "UAV_SERVICE_TIMER",
+      "UAV_POSITION_GRID",
+      "UAV_VELOCITY_GRID"
+    ],
+    "analytic_eps_star": [
+      0.018403768449072183,
+      0.135841743875344,
+      0.05309952525656824
+    ],
+    "equal_weighted_budget_eps": [
+      0.03000930566229169,
+      0.1125348962335954,
+      0.045013958493438165
+    ],
+    "analytic_model_cost": 2912790377.8107767,
+    "equal_weighted_model_cost": 3555173867.1239657,
+    "modeled_cost_reduction_vs_equal": 0.18068975339112148,
+    "KKT_weighted_error_per_dimension": [
+      0.017253532921005423,
+      0.017253532921005423,
+      0.017253532921005423
+    ],
+    "KKT_max_minus_min": 0.0,
+    "discrete_calibrated_level_optimum": {
+      "eps": [
+        0.025,
+        0.1,
+        0.05
+      ],
+      "error": 0.07968750000000036,
+      "actual_product_complexity": 4217723136.0
+    }
+  },
+  "gates": {
+    "stage1_service_linear_law": true,
+    "timer_factor_calibrated": true,
+    "position_grid_one_factor_calibrated": true,
+    "velocity_grid_one_factor_calibrated": true,
+    "same_application_three_factor_context": true,
+    "allocation_has_common_interior_budget": true
+  },
+  "claim_boundary": [
+    "All calibrations are finite-grid application evidence under the frozen UAV Stage-2 model.",
+    "Position and velocity grid sweeps are one-factor-at-a-time.",
+    "Grid error constants are inferred from the actual successor-radius dependence and normalized by declared safety limits.",
+    "The power-law complexity model is an empirical fit to actual factor node counts squared over the calibrated resolution range.",
+    "No equality with the continuous viability kernel is claimed."
+  ]
+}

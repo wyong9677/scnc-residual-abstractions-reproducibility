@@ -1,0 +1,5 @@
+p_step_m,v_step_mps,conceptual_full_4d_grid_states,normalized_position_cell_error,normalized_velocity_cell_error,combined_grid_margin_bound,source
+0.2,0.2,35721,0.05,0.125,0.175,05_RESULTS/tables/stage3/uav_stage3_grid_refinement.csv
+0.1,0.1,485809,0.025,0.0625,0.0875,05_RESULTS/tables/stage3/uav_stage3_grid_refinement.csv
+0.05,0.05,7144929,0.0125,0.03125,0.04375,05_RESULTS/tables/stage3/uav_stage3_grid_refinement.csv
+0.025,0.025,109516225,0.00625,0.015625,0.021875,05_RESULTS/tables/stage3/uav_stage3_grid_refinement.csv

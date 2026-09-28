@@ -1,0 +1,7 @@
+scenario,timer_quantum_s,shared_scheduler,reachable_states,unique_service_signatures,exact_task_quotient_states,exact_value_common_denominator,eta_V_declared_finite_task,float32_eta_numerator,float32_eta_denominator,float32_eta_decimal,float32_eta_arg_state,float32_eta_arg_anchor,exact_value_gate,exact_replay_seconds
+independent_dtau_0p1,0.1,0,81,4,4,800,0,1,167772160,5.960464477539063e-09,0,0,1,0.27004384994506836
+shared_dtau_0p1,0.1,1,178,11,11,800,0,1,167772160,5.960464477539063e-09,0,1,1,0.5353538990020752
+independent_dtau_0p05,0.05,0,289,9,9,3200,0,1,167772160,5.960464477539063e-09,0,0,1,0.6197340488433838
+shared_dtau_0p05,0.05,1,608,29,29,3200,0,11,1677721600,6.556510925292969e-09,6,3,1,1.6449449062347412
+independent_dtau_0p025,0.025,0,1089,25,25,12800,0,7,838860800,8.344650268554688e-09,1,32,1,1.795088291168213
+shared_dtau_0p025,0.025,1,2236,89,89,12800,0,7,838860800,8.344650268554688e-09,2,32,1,5.5393640995025635

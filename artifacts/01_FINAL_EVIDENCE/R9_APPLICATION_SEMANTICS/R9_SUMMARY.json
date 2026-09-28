@@ -1,0 +1,21 @@
+{
+  "R9_STATUS": "APPLICATION_SEMANTIC_CLOSURE_PASS",
+  "R8_candidate_classification_counts": {
+    "SUPPORTING_DUPLICATE": 1,
+    "PROMOTE_APPLICATION_FACTOR": 1,
+    "REJECT_SEMANTIC_MISMATCH": 10
+  },
+  "promoted_application_factors": 2,
+  "factors": [
+    "CSTR_TIMER_CELL",
+    "UAV_SERVICE_TIMER"
+  ],
+  "same_application_multifactor_allocation_calibrated": false,
+  "allocation_gate": "NOT_YET_APPLICATION_CALIBRATED",
+  "reason": "CSTR and UAV timer factors are both real, but belong to different application/error-budget contexts and must not be summed in a single Delta budget. UAV p/v grid resolutions were varied together and are not separately identified.",
+  "next_required_experiment": "Within the UAV benchmark, run one-factor-at-a-time p_step and v_step sweeps at fixed service timer width and fixed non-service uncertainty, recording representation complexity and normalized safety margin erosion. This can produce a same-context timer/position-grid/velocity-grid allocation benchmark.",
+  "uav_grid_audit": {
+    "status": "SUPPORTING_ONLY_NOT_PROMOTED",
+    "reason": "Stage-3 varies p_step and v_step together. It therefore does not independently identify separate position-grid and velocity-grid factor sensitivities. A targeted two-factor one-at-a-time sweep is required before using them as separate allocation factors."
+  }
+}

@@ -1,0 +1,7 @@
+scenario,timer_quantum_s,shared_scheduler,reachable_states,residual_quotient_states,task_quotient_states,stabilization_depth,C_residual_to_task,c_reverse_global,zero_residual_positive_task_pairs,positive_residual_zero_task_pairs,upper_sensitivity_pass,reverse_sensitivity_global_pass,max_residual_metric,max_task_metric,run_seconds
+independent_dtau_0p1,0.1,0,81,81,4,9,0.1875,0.0,0,2072,1,0,1.0,0.1875,0.07761788368225098
+shared_dtau_0p1,0.1,1,178,166,11,10,0.1875,0.0,0,8001,1,0,1.0,0.1875,0.09285092353820801
+independent_dtau_0p05,0.05,0,289,289,9,9,0.1875,0.0,0,25620,1,0,1.0,0.1875,0.10941219329833984
+shared_dtau_0p05,0.05,1,608,584,29,10,0.1875,0.0,0,87368,1,0,1.0,0.1875,0.1820390224456787
+independent_dtau_0p025,0.025,0,1089,1089,25,9,0.1875,0.0,0,356468,1,0,1.0,0.1875,0.36292099952697754
+shared_dtau_0p025,0.025,1,2236,2188,89,10,0.1875,0.0,0,1132746,1,0,1.0,0.1875,1.2555437088012695

@@ -1,0 +1,8 @@
+{
+  "R10_STATUS": "UNIQUE_SEMANTIC_SOURCE_DUPLICATES",
+  "exact_literal_sources": 3,
+  "selected_seed": "01_CODE/stage3/uav_stage3.py",
+  "dependency_files": 1,
+  "purpose": "Locate the real UAV Stage-3 grid-refinement generator before constructing independent p_step and v_step sweeps.",
+  "next_gate": "Generate and execute isolated one-factor p_step and v_step sweeps only after this source is resolved."
+}

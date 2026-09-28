@@ -1,0 +1,16 @@
+{
+  "R6_STATUS": "THEORY_ALIGNED_EVIDENCE_PASS",
+  "CSTR_COORDINATE_TASK": "PASS",
+  "FULL_HISTORY_EXACT_RESIDUAL_TASK": "PASS",
+  "OLD_STAGE6_RESIDUAL_LABELS_FOUND": 8,
+  "theory_numerics_assignment": {
+    "CSTR": "coordinate-to-task sensitivity, positive-margin persistence, timer-cell safety",
+    "full_history": "exact behavioral residual metric, residual-to-task upper sensitivity, task quotient and later certified minimum-code graph"
+  },
+  "mandatory_manuscript_changes": [
+    "Replace d_sigma(tau,tau')=|tau-tau'| in CSTR Stage 6 by d_tau(tau,tau')=|tau-tau'|.",
+    "Rename residual_dimension_dense/raw_residual_dimension_diagnostic in the CSTR numerical discussion to coordinate finite-scale covering exponents.",
+    "Do not claim global reverse residual-to-task sensitivity unless separately restricted and verified.",
+    "Use the full-history benchmark as the direct numerical instantiation of exact behavioral d_sigma."
+  ]
+}

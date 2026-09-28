@@ -1,0 +1,32 @@
+{
+  "independent_dtau_0p025": {
+    "scenario": "independent_dtau_0p025",
+    "E": "0.001",
+    "task_quotient_states": 25,
+    "exact_conflict_edges": 300,
+    "legacy_float_edge_mismatches": 0,
+    "minimum_exact_distance_to_2E_numerator": 359,
+    "minimum_exact_distance_to_2E_denominator": 8000,
+    "minimum_exact_distance_to_2E_decimal": 0.044875,
+    "bitset_adapter_pass": 1,
+    "chromatic_lower": 25,
+    "chromatic_upper": 25,
+    "chromatic_exact": 1,
+    "chromatic_status": "BOUNDS_MEET"
+  },
+  "shared_dtau_0p025": {
+    "scenario": "shared_dtau_0p025",
+    "E": "0.001",
+    "task_quotient_states": 89,
+    "exact_conflict_edges": 3852,
+    "legacy_float_edge_mismatches": 0,
+    "minimum_exact_distance_to_2E_numerator": 7,
+    "minimum_exact_distance_to_2E_denominator": 64000,
+    "minimum_exact_distance_to_2E_decimal": 0.000109375,
+    "bitset_adapter_pass": 1,
+    "chromatic_lower": 59,
+    "chromatic_upper": 59,
+    "chromatic_exact": 1,
+    "chromatic_status": "BOUNDS_MEET"
+  }
+}
