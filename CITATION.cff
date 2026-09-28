@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this reproducibility package, please cite the associated article and archived Zenodo release."
-title: "Numerical Reproducibility Package for Compositional Residual Abstractions for Stateful Services in Safety-Critical Networked Control"
-type: software
+message: "If you use this dataset, please cite the archived Zenodo record and the associated article."
+title: "Numerical Evidence Dataset for Compositional Residual Abstractions for Stateful Services in Safety-Critical Networked Control"
+type: dataset
 version: 1.0.0
 date-released: 2026-09-28
 authors:

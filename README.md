@@ -1,7 +1,8 @@
-# Numerical Reproducibility Package
+# Numerical Evidence Dataset
 
-This repository contains the numerical code, structured data, derived numerical
-evidence, and final generated outputs supporting the numerical studies in:
+This repository contains the publication-facing numerical data, machine-readable
+certificates, calibrated parameter tables, derived evidence, and provenance
+records supporting the numerical studies in:
 
 **Compositional Residual Abstractions for Stateful Services in Safety-Critical
 Networked Control: Semantics, Viability, and Information Complexity**
@@ -10,48 +11,63 @@ Authors: Yong Wang, Qiurui Liu, Ying Zhou, and Xiao Ma.
 
 ## Scope
 
-The package is intended to reproduce and audit the numerical evidence reported
-for the UAV, nonlinear CSTR, and finite full-history task studies.
+The dataset records the numerical evidence used for the UAV, nonlinear CSTR,
+and finite full-history task studies reported in the associated article.
 
-Only canonical publication-facing numerical artifacts are included. Failed,
-partial, temporary, duplicated, machine-local, and internal formal-audit
-artifacts are intentionally omitted.
+The repository is an evidence dataset rather than a complete archival copy of
+the internal research workspace. Failed runs, temporary files, duplicated
+archives, local execution logs, machine-specific paths, internal formal-audit
+material, and unrelated development artifacts are intentionally omitted.
+
+## Main contents
+
+- UAV multi-factor calibration and grid-sweep evidence.
+- CSTR coordinate-task and structured numerical evidence.
+- Full-history residual/task data.
+- Exact finite task-value profiles.
+- Certified conflict-graph data and certificates.
+- Application-level calibrated factors.
+- Final numerical claims and provenance summaries.
 
 ## Third-party data
 
-Third-party raw packet captures, including external NIST C-V2X source captures,
-are not redistributed in this repository. They should be obtained from the
-original source cited in the associated article. Derived statistics and the
-study-specific processing code may be included where redistribution is
-permitted.
+Third-party raw packet captures, including externally hosted NIST C-V2X source
+captures, are not redistributed here. Such data should be obtained from the
+original source cited in the associated article. Only study-specific derived
+evidence is included where appropriate.
 
-## Reproducibility boundary
+## Claim boundary
 
-Exact finite-domain claims apply only to the declared finite plant-anchor,
-action, service-transition, and horizon sets specified in the article and
-supporting material. Finite-grid certification is not presented as a
-continuous-state maximal viability-kernel computation.
+Exact finite-domain numerical claims apply only to the declared finite
+plant-anchor, action, service-transition, and horizon sets specified in the
+article and supporting material.
 
-## Contents
+Finite-grid safety certification is not identified with a continuous-state
+maximal viability kernel.
 
-- `artifacts/`: publication-facing numerical code, data, parameters, and outputs.
-- `MANIFEST_INCLUDED.csv`: included-file inventory.
-- `SHA256SUMS.txt`: SHA-256 hashes of included numerical artifacts.
-
-A permanent DOI will be added after archival of the corresponding release in
-Zenodo.
+Coordinate metrics are not identified with behavioral residual metrics unless
+an explicit comparison result is established.
 
 ## Provenance sanitization
 
-Four machine-readable provenance files from the canonical numerical freeze are
-included in sanitized form. Machine-local absolute filesystem paths were
-replaced by portable package-relative or symbolic path markers. Numerical
-values, scientific status fields, filenames, hashes, and evidence relationships
-were otherwise left unchanged.
+Four provenance records from the canonical R13 numerical freeze are included in
+sanitized form. Machine-local absolute filesystem paths were replaced by
+portable symbolic or package-relative paths. Scientific numerical values,
+status fields, evidence relationships, and study identifiers were otherwise
+preserved.
 
-The internal cleanup receipt was intentionally omitted because it records local
-housekeeping operations rather than scientific evidence.
+The internal cleanup receipt and local housekeeping checksums are not part of
+this public dataset.
 
-The canonical numerical source for this public package is the R13 final
-numerical freeze. Earlier stage identifiers appearing in provenance records
-document lineage only and do not supersede the R13 freeze.
+## Integrity
+
+`MANIFEST_INCLUDED.csv` lists publication-facing artifacts.
+
+`SHA256SUMS.txt` contains SHA-256 checksums generated from this public dataset
+after sanitization and is the authoritative checksum list for the archived
+release.
+
+## Archival record
+
+A permanent Zenodo DOI will be added after the public v1.0.0 release is
+archived.
